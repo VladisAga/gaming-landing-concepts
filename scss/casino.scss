@@ -140,6 +140,9 @@ body {
 
     .wheel {
       position: relative;
+      box-sizing: border-box;
+      flex-shrink: 0;
+
       width: min(100%, 320px);
       aspect-ratio: 1;
       margin: 30px auto 0;

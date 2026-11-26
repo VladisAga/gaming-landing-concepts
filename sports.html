@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#101812">
+    <meta name="description" content="Experience the excitement of sports with LuckySpin.">
+
+    <title>LuckySpin — Sports Experience</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sports.css">
+</head>
+<body>
+
+<div class="loader" id="page-loader">
+    <div class="loader__spinner"></div>
+    <p class="loader__text">LOADING EXPERIENCE...</p>
+</div>
+
+<main class="sports">
+
+    <header class="sports__header">
+        <a href="https://www.365scores.com/he" class="sports__logo">
+            LUCKY<span>SPIN</span>
+        </a>
+
+        <a href="#featured-match" class="sports__header-link">
+            EXPLORE MATCH
+        </a>
+    </header>
+
+    <section class="sports__hero">
+
+        <div class="sports__background"></div>
+
+        <img
+                src="./assets/images/sports-player.webp"
+                alt="Football player"
+                class="sports__player"
+        >
+
+        <div class="sports__content">
+            <span class="sports__eyebrow" id="sports-eyebrow"></span>
+
+            <h1 class="sports__title" id="sports-title"></h1>
+
+            <p class="sports__description" id="sports-description"></p>
+
+            <div class="sports__bonus">
+                <span class="sports__bonus-label">WELCOME BONUS</span>
+                <strong id="sports-bonus-value"></strong>
+                <span>Make your first prediction and unlock your bonus.</span>
+            </div>
+
+            <a href="#featured-match" class="sports__button">
+                EXPLORE MATCH
+            </a>
+        </div>
+
+        <div class="sports__hero-decoration">
+            <span>01</span>
+            <span>SPORTS EXPERIENCE</span>
+        </div>
+
+    </section>
+
+    <section class="sports__match-section" id="featured-match">
+
+        <div class="sports__section-heading">
+            <span class="sports__eyebrow">DON'T MISS THE ACTION</span>
+            <h2>Featured <span>Match</span></h2>
+            <p>One match. Three possible outcomes. What's your call?</p>
+        </div>
+
+        <div class="sports__match-card">
+
+            <div class="sports__match-info">
+                <span id="sports-league"></span>
+                <span id="sports-kickoff"></span>
+            </div>
+
+            <div class="sports__teams">
+                <div class="sports__team">
+                    <div class="sports__team-badge" id="sports-home-badge">RMA</div>
+                    <h3 id="sports-home-name">Real Madrid</h3>
+                </div>
+
+                <span class="sports__versus">VS</span>
+
+                <div class="sports__team">
+                    <div class="sports__team-badge" id="sports-away-badge">MCI</div>
+                    <h3 id="sports-away-name">Man City</h3>
+                </div>
+            </div>
+
+            <div class="sports__prediction">
+                <div class="sports__prediction-heading">
+                    <h3>Who will win?</h3>
+                    <span>SELECT YOUR OUTCOME</span>
+                </div>
+
+                <div class="sports__options" id="sports-options"></div>
+
+                <p class="sports__hint" id="sports-hint">
+                    Select your prediction to continue
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sports__steps-section">
+
+        <div class="sports__section-heading">
+            <span class="sports__eyebrow">GET STARTED</span>
+            <h2>How it <span>works</span></h2>
+            <p>Your sports experience starts in three simple steps.</p>
+        </div>
+
+        <div class="sports__steps">
+
+            <article class="sports__step">
+                <span class="sports__step-number">01</span>
+                <h3>Create an account</h3>
+                <p>Join the action and get access to exclusive offers.</p>
+            </article>
+
+            <article class="sports__step">
+                <span class="sports__step-number">02</span>
+                <h3>Make your prediction</h3>
+                <p>Choose your favorite outcome for the featured match.</p>
+            </article>
+
+            <article class="sports__step">
+                <span class="sports__step-number">03</span>
+                <h3>Unlock your bonus</h3>
+                <p>Complete the offer and enjoy your welcome bonus.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="sports__benefits-section">
+
+        <div class="sports__section-heading">
+            <span class="sports__eyebrow">THE GAME NEVER STOPS</span>
+            <h2>More than just <span>sports</span></h2>
+        </div>
+
+        <div class="sports__benefits">
+
+            <article class="sports__benefit">
+                <span class="sports__benefit-icon">↗</span>
+                <h3>Competitive Odds</h3>
+                <p>Explore exciting odds across popular sporting events.</p>
+            </article>
+
+            <article class="sports__benefit">
+                <span class="sports__benefit-icon">◉</span>
+                <h3>Live Action</h3>
+                <p>Stay close to the action with live sports coverage.</p>
+            </article>
+
+            <article class="sports__benefit">
+                <span class="sports__benefit-icon">▣</span>
+                <h3>Anytime, Anywhere</h3>
+                <p>Enjoy a seamless experience across your devices.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <footer class="sports__footer">
+        <a href="https://www.365scores.com/he" class="sports__logo">
+            LUCKY<span>SPIN</span>
+        </a>
+
+        <p id="sports-legal">
+            18+ only · T&Cs apply · Demo concept, no real money · Play responsibly
+        </p>
+    </footer>
+
+    <div class="page-switcher">
+        <span class="page-switcher__label">EXPLORE MORE</span>
+
+        <nav class="page-switcher__nav">
+            <a href="./casino.html">Casino</a>
+            <a href="./sports.html" class="is-active">Sports</a>
+        </nav>
+    </div>
+
+</main>
+
+<div class="modal" id="sports-modal">
+    <div class="modal__overlay"></div>
+
+    <div class="modal__content">
+        <button
+                class="modal__close"
+                id="sports-modal-close"
+                aria-label="Close"
+        >
+            &times;
+        </button>
+
+        <span class="sports-modal__badge">
+        <span class="sports-modal__badge-dot"></span>
+        <span id="sports-modal-kicker"></span>
+        </span>
+
+        <div class="sports-modal__icon">🏆</div>
+
+        <h2 class="modal__title" id="sports-modal-title"></h2>
+
+        <p class="sports-modal__prize" id="sports-modal-prize"></p>
+
+        <div class="sports-modal__prediction">
+            <span class="sports-modal__prediction-label">YOUR PREDICTION</span>
+            <p class="modal__description" id="sports-modal-description"></p>
+        </div>
+
+        <button class="modal__button" id="sports-modal-button"></button>
+
+        <p class="sports-modal__note">
+            Demo concept · No real money involved
+        </p>
+    </div>
+</div>
+
+<script type="module" src="./js/sports.js"></script>
+
+</body>
+</html>

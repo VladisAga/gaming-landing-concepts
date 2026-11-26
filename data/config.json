@@ -1,0 +1,175 @@
+{
+  "site": {
+    "spinnerMs": 1500,
+    "defaultVariant": "A",
+    "legal": "18+ only · T&Cs apply · Demo concept, no real money · Play responsibly"
+  },
+  "hub": {
+    "brand": "INTERACTIVE CONCEPTS",
+    "title": "Pick a concept",
+    "subtitle": "Two mobile-first mini-games. Pure HTML, CSS and vanilla JS.",
+    "cards": [
+      {
+        "href": "casino.html",
+        "theme": "casino",
+        "kicker": "Casino",
+        "title": "Spin & Win",
+        "text": "Spin the wheel and unlock a guaranteed prize.",
+        "cta": "Play"
+      },
+      {
+        "href": "sports.html",
+        "theme": "sports",
+        "kicker": "Sports",
+        "title": "Call the Match",
+        "text": "Pick the winner, lock your prediction, claim a bonus.",
+        "cta": "Play"
+      }
+    ]
+  },
+  "casino": {
+    "brand": "ROYAL SPIN",
+    "headlines": {
+      "A": "Spin & Win up to $500!",
+      "B": "Your free spin is waiting"
+    },
+    "subline": "One spin. Guaranteed prize. Tap SPIN to reveal yours.",
+    "spinLabel": "SPIN",
+    "spinningLabel": "GOOD LUCK…",
+    "spinDurationMs": 4500,
+    "extraTurns": 5,
+    "winningPrizeId": null,
+    "prizes": [
+      {
+        "id": "spins50",
+        "short": "50\nSPINS",
+        "label": "50 Free Spins",
+        "description": "Play them on our top slots. Winnings are yours to keep.",
+        "color": "#8B19FF",
+        "textColor": "#FFFFFF",
+        "weight": 10
+      },
+      {
+        "id": "bonus10",
+        "short": "$10\nBONUS",
+        "label": "$10 Bonus",
+        "description": "Instant bonus credit on your first deposit.",
+        "color": "#E81791",
+        "textColor": "#FFFFFF",
+        "weight": 18
+      },
+      {
+        "id": "match100",
+        "short": "100%\nMATCH",
+        "label": "100% Deposit Match",
+        "description": "We double your first deposit, up to $200.",
+        "color": "#FFBD45",
+        "textColor": "#321000",
+        "weight": 8
+      },
+      {
+        "id": "spins25",
+        "short": "25\nSPINS",
+        "label": "25 Free Spins",
+        "description": "Play them on our top slots. Winnings are yours to keep.",
+        "color": "#6420B5",
+        "textColor": "#FFFFFF",
+        "weight": 22
+      },
+      {
+        "id": "bonus25",
+        "short": "$25\nBONUS",
+        "label": "$25 Bonus",
+        "description": "Instant bonus credit on your first deposit.",
+        "color": "#B52BE0",
+        "textColor": "#FFFFFF",
+        "weight": 6
+      },
+      {
+        "id": "spins10",
+        "short": "10\nSPINS",
+        "label": "10 Free Spins",
+        "description": "A quick warm-up on our most popular slot.",
+        "color": "#FF168F",
+        "textColor": "#FFFFFF",
+        "weight": 26
+      },
+      {
+        "id": "match200",
+        "short": "200%\nMATCH",
+        "label": "200% Deposit Match",
+        "description": "Triple your first deposit, up to $500.",
+        "color": "#FFBD45",
+        "textColor": "#321000",
+        "weight": 4
+      },
+      {
+        "id": "bonus5",
+        "short": "$5\nBONUS",
+        "label": "$5 Bonus",
+        "description": "Instant bonus credit on your first deposit.",
+        "color": "#9A36E8",
+        "textColor": "#FFFFFF",
+        "weight": 6
+      }
+    ],
+
+
+    "modal": {
+      "kicker": "Congratulations!",
+      "title": "You won",
+      "claimLabel": "Claim bonus",
+      "claimingLabel": "Taking you there…",
+      "ctaUrl": "https://example.com/casino?prize={prizeId}&variant={variant}"
+    }
+  },
+  "sports": {
+    "brand": "MATCHDAY PICKS",
+    "headlines": {
+      "A": "Call the match. Win a bonus.",
+      "B": "Who takes the win tonight?"
+    },
+    "subline": "Pick one outcome to lock in your prediction.",
+    "stake": 10,
+    "currency": "$",
+    "match": {
+      "league": "Champions League",
+      "kickoff": "Tonight · 22:00",
+      "options": [
+        {
+          "id": "home",
+          "name": "Real Madrid",
+          "short": "RMA",
+          "color": "#f2f2f2",
+          "textColor": "#1b1b1b",
+          "odds": 2.45
+        },
+        {
+          "id": "draw",
+          "name": "Draw",
+          "short": "X",
+          "color": "#9aa4b2",
+          "textColor": "#101820",
+          "odds": 3.4
+        },
+        {
+          "id": "away",
+          "name": "Man City",
+          "short": "MCI",
+          "color": "#6cabdd",
+          "textColor": "#0a2a43",
+          "odds": 2.8
+        }
+      ]
+    },
+    "modal": {
+      "kicker": "Prediction locked in",
+      "title": "Great pick!",
+      "prize": "100% bonus up to $100",
+      "text": "You backed {pick} at {odds}. A {currency}{stake} stake would return {return}.",
+      "claimLabel": "Claim bonus",
+      "claimingLabel": "Taking you there…",
+      "ctaUrl": "https://example.com/sports?pick={pickId}&variant={variant}"
+    }
+  }
+}

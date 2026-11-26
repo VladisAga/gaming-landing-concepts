@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#160323">
+    <meta name="description" content="Discover the ultimate casino experience.">
+
+    <title>LuckySpin — Casino Experience</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/casino.css">
+</head>
+<body>
+
+<div class="loader" id="page-loader" aria-live="polite">
+    <div class="loader__spinner"></div>
+    <p class="loader__text">Loading experience...</p>
+</div>
+
+<main class="casino">
+
+    <header class="casino__header">
+        <a href="https://www.365scores.com/he" class="casino__logo">
+            LUCKY<span>SPIN</span>
+        </a>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero__background"></div>
+
+        <div class="hero__character">
+            <img
+                    src="./assets/images/casino-woman.webp"
+                    alt=""
+                    width="700"
+                    height="1200"
+                    fetchpriority="high"
+            >
+        </div>
+
+        <div class="hero__content">
+            <p class="hero__eyebrow">
+                THE ULTIMATE CASINO EXPERIENCE
+            </p>
+
+            <h1 class="hero__title">
+                SPIN & WIN
+                <span>YOUR BONUS</span>
+            </h1>
+
+            <p class="hero__description">
+                Unlock exclusive rewards and discover
+                your next surprise.
+            </p>
+        </div>
+
+
+        <div class="hero__game">
+            <div class="wheel">
+                <div class="wheel__pointer"></div>
+                <div class="wheel__segments"></div>
+                <div class="wheel__center"></div>
+            </div>
+        </div>
+
+
+
+        <button class="hero__button" type="button">
+            SPIN NOW
+        </button>
+
+        <footer class="hero__footer">
+            <span>18+</span>
+            <span>Demo concept</span>
+            <span>No real money</span>
+        </footer>
+
+    </section>
+
+    <div class="modal" id="prize-modal" aria-hidden="true">
+        <div class="modal__overlay"></div>
+
+        <div
+                class="modal__content"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-title"
+        >
+            <button class="modal__close" type="button" aria-label="Close">
+                &times;
+            </button>
+
+            <p class="modal__kicker"></p>
+            <h2 class="modal__title" id="modal-title"></h2>
+            <p class="modal__prize"></p>
+            <p class="modal__description"></p>
+
+            <a class="modal__button" href="#">
+                CLAIM BONUS
+            </a>
+        </div>
+    </div>
+
+<footer class="page-switcher">
+    <span class="page-switcher__label">EXPLORE MORE</span>
+
+    <nav class="page-switcher__nav">
+        <a href="./casino.html" class="is-active">Casino</a>
+        <a href="./sports.html">Sports</a>
+    </nav>
+</footer>
+</main>
+
+
+<script type="module" src="./js/casino.js"></script>
+
+</body>
+</html>

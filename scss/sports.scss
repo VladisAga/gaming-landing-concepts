@@ -186,8 +186,6 @@ $sports-muted: #9ba99e;
     }
   }
 
-  // SECTION HEADINGS
-
   &__section-heading {
     max-width: 550px;
     margin: 0 auto 38px;
@@ -210,8 +208,6 @@ $sports-muted: #9ba99e;
       line-height: 1.6;
     }
   }
-
-  // FEATURED MATCH
 
   &__match-section {
     padding: 85px 20px;
@@ -361,8 +357,6 @@ $sports-muted: #9ba99e;
     text-align: center;
   }
 
-  // HOW IT WORKS
-
   &__steps-section {
     padding: 75px 20px;
     background: #141e17;
@@ -403,8 +397,6 @@ $sports-muted: #9ba99e;
     }
   }
 
-  // BENEFITS
-
   &__benefits-section {
     padding: 80px 20px;
   }
@@ -442,8 +434,6 @@ $sports-muted: #9ba99e;
     }
   }
 
-  // FOOTER
-
   &__footer {
     display: flex;
     flex-direction: column;
@@ -461,9 +451,6 @@ $sports-muted: #9ba99e;
     }
   }
 }
-
-// MODAL
-
 
 #sports-modal {
   position: fixed;
@@ -702,8 +689,6 @@ $sports-muted: #9ba99e;
     color: $sports-primary;
   }
 }
-
-// RESPONSIVE
 
 @media (min-width: 768px) {
   .sports {

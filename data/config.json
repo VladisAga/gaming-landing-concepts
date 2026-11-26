@@ -10,7 +10,7 @@
     "subtitle": "Two mobile-first mini-games. Pure HTML, CSS and vanilla JS.",
     "cards": [
       {
-        "href": "casino.html",
+        "href": "index.html",
         "theme": "casino",
         "kicker": "Casino",
         "title": "Spin & Win",
